@@ -4,6 +4,12 @@
 
 	const inputsProps: InputProps[] = [
 		{
+			title: 'Name',
+			type: 'text',
+			id: 'name',
+			name: 'name'
+		},
+		{
 			title: 'Email',
 			type: 'email',
 			id: 'email',
