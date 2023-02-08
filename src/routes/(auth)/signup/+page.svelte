@@ -24,15 +24,16 @@
 		{
 			title: 'Confirm Password',
 			type: 'password',
-			id: 'confirm-password',
-			name: 'confirm-password'
+			id: 'confirmPassword',
+			name: 'confirmPassword'
 		}
 	];
-
-	export const prerender = true;
 </script>
 
-<form method="POST" class="border-2 border-gray-600 mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]">
+<form
+	method="POST"
+	class="border-2 border-gray-600 mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]"
+>
 	<legend class="text-2xl font-[500]">Sign up</legend>
 	{#each inputsProps as inputProps (inputProps.id)}
 		<Input {inputProps} />
