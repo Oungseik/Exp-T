@@ -30,15 +30,12 @@
 	];
 </script>
 
-<form
-	method="POST"
-	class="border-2 border-gray-600 mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]"
->
+<form method="POST" class=" mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]">
 	<legend class="text-2xl font-[500]">Sign up</legend>
 	{#each inputsProps as inputProps (inputProps.id)}
 		<Input {inputProps} />
 	{/each}
-	<p class="text-sm mt-2">
+	<p class="text-sm mt-3">
 		Already have account? <a
 			class="text-cyan-300 underline underline-offset-2 transition hover:text-cyan-400"
 			href="/login">Log in.</a

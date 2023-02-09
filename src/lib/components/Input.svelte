@@ -3,13 +3,16 @@
 	export let inputProps: InputProps;
 </script>
 
-<div class="flex flex-col relative mt-6">
+<div class="flex flex-col relative mt-8">
 	<input
-		class="bg-gray-600 p-2 rounded-lg focus:ring-1 focus:ring-gray-400 focus-visible:outline-transparent"
+		class="peer bg-transparent border-b border-b-gray-400 focus-visible:outline-none placeholder-transparent"
 		type={inputProps.type}
 		name={inputProps.name}
 		id={inputProps.id}
 		placeholder={inputProps.title}
 	/>
-	<slot />
+	<label
+		class="absolute text-slate-400 peer-placeholder-shown:top-0 peer-placeholder-shown:text-base text-sm -top-5 transition-[top] duration-300"
+		for={inputProps.id}>{inputProps.title}</label
+	>
 </div>

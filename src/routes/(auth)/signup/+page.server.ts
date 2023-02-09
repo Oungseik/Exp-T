@@ -16,7 +16,7 @@ export const actions: Actions = {
 
     try {
       // TODO: there is problem when creating new user.
-      locals.pb.collection("users").create(data);
+      // locals.pb.collection("users").create(data);
       locals.pb.collection("users").authWithPassword(data.email, data.password)
 
     } catch (e) {
