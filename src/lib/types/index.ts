@@ -1,6 +1,6 @@
 export type InputProps = {
-  title: string;
-  type: 'number' | 'password' | 'text' | 'range' | 'email';
-  name: string;
-  id: string;
+	title: string;
+	type: 'number' | 'password' | 'text' | 'range' | 'email';
+	name: string;
+	id: string;
 };
