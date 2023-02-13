@@ -1,19 +1,19 @@
 <script lang="ts">
-	import Input from '$lib/components/Input.svelte';
-	import type { InputProps } from '$lib/types';
+	import Input from "$lib/components/Input.svelte";
+	import type { InputProps } from "$lib/types";
 
 	const inputsProps: InputProps[] = [
 		{
-			title: 'Email',
-			type: 'email',
-			id: 'email',
-			name: 'email'
+			title: "Email",
+			type: "email",
+			id: "email",
+			name: "email"
 		},
 		{
-			title: 'Password',
-			type: 'password',
-			id: 'password',
-			name: 'password'
+			title: "Password",
+			type: "password",
+			id: "password",
+			name: "password"
 		}
 	];
 

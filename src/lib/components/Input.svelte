@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { InputProps } from '$lib/types';
+	import type { InputProps } from "$lib/types";
 	export let inputProps: InputProps;
 </script>
 

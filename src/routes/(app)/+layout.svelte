@@ -1,5 +1,5 @@
 <script>
-	import profilePic from '$lib/images/profile.png';
+	import profilePic from "$lib/images/profile.png";
 </script>
 
 <header

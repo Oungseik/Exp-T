@@ -426,15 +426,15 @@
   	(db) => {
   		// up
   		const dao = new Dao(db);
-  		const collection = dao.findCollectionByNameOrId('lngf8rb3dqu86r3');
-  		collection.name = 'posts_new';
+  		const collection = dao.findCollectionByNameOrId("lngf8rb3dqu86r3");
+  		collection.name = "posts_new";
   		return dao.saveCollection(collection);
   	},
   	(db) => {
   		// down
   		const dao = new Dao(db);
-  		const collection = dao.findCollectionByNameOrId('lngf8rb3dqu86r3');
-  		collection.name = 'posts_old';
+  		const collection = dao.findCollectionByNameOrId("lngf8rb3dqu86r3");
+  		collection.name = "posts_old";
   		return dao.saveCollection(collection);
   	}
   );

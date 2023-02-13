@@ -1,5 +1,5 @@
-import { redirect } from '@sveltejs/kit';
-import type { Actions } from './$types';
+import { redirect } from "@sveltejs/kit";
+import type { Actions } from "./$types";
 
 export const actions: Actions = {
 	default: async ({ locals, request }) => {
@@ -14,12 +14,12 @@ export const actions: Actions = {
 		try {
 			// TODO: there is problem when creating new user.
 			// locals.pb.collection("users").create(data);
-			locals.pb.collection('users').authWithPassword(data.email, data.password);
+			locals.pb.collection("users").authWithPassword(data.email, data.password);
 		} catch (e) {
 			console.log(e);
 			throw e;
 		}
 
-		throw redirect(303, '/');
+		throw redirect(303, "/");
 	}
 };
