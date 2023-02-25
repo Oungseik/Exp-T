@@ -16,8 +16,6 @@
 			name: "password"
 		}
 	];
-
-	export const prerender = true;
 </script>
 
 <form method="POST" class="mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]">
