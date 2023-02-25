@@ -24,8 +24,8 @@
 		{
 			title: "Confirm Password",
 			type: "password",
-			id: "confirmPassword",
-			name: "confirmPassword"
+			id: "passwordConfirm",
+			name: "passwordConfirm"
 		}
 	];
 </script>
