@@ -8,18 +8,20 @@
 			title: "Email",
 			type: "email",
 			id: "email",
-			name: "email"
+			name: "email",
+      required: true,
 		},
 		{
 			title: "Password",
 			type: "password",
 			id: "password",
-			name: "password"
+			name: "password",
+      required: true,
 		}
 	];
 </script>
 
-<form method="POST" class="mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]" use:enhance>
+<form method="POST" class="mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]">
 	<legend class="text-2xl font-[500]">Login</legend>
 	{#each inputsProps as inputProps (inputProps.id)}
 		<Input {inputProps} />

@@ -10,6 +10,7 @@
 		name={inputProps.name}
 		id={inputProps.id}
 		placeholder={inputProps.title}
+		required={inputProps.required}
 	/>
 	<label
 		class="absolute text-slate-400 peer-placeholder-shown:top-0 peer-placeholder-shown:text-base text-sm -top-5 transition-[top] duration-300"

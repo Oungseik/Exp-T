@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { page } from "$app/stores";
 	import Notification from "$lib/components/Notification.svelte";
-
-	console.log($page.form);
 </script>
 
 {#if $page.form?.error}

@@ -2,7 +2,7 @@
 	// import { enhance } from "$app/forms";
 	import Input from "$lib/components/Input.svelte";
 	import type { InputProps } from "$lib/types";
-	import type { ActionData } from "./$types";
+	// import type { ActionData } from "./$types";
 
 	// export let form: ActionData;
 
@@ -11,25 +11,29 @@
 			title: "Name",
 			type: "text",
 			id: "name",
-			name: "name"
+			name: "name",
+			required: true
 		},
 		{
 			title: "Email",
 			type: "email",
 			id: "email",
-			name: "email"
+			name: "email",
+			required: true
 		},
 		{
 			title: "Password",
 			type: "password",
 			id: "password",
-			name: "password"
+			name: "password",
+			required: true
 		},
 		{
 			title: "Confirm Password",
 			type: "password",
 			id: "passwordConfirm",
-			name: "passwordConfirm"
+			name: "passwordConfirm",
+			required: true
 		}
 	];
 </script>

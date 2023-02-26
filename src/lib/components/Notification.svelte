@@ -30,7 +30,7 @@
 				/>
 			</svg>
 		{/if}
-		<span class="capitalize flex-grow">
+		<span class="flex-grow">
 			{message}
 		</span>
 	</p>
