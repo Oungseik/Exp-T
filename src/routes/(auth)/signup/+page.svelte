@@ -1,7 +1,10 @@
 <script lang="ts">
-	import { enhance } from "$app/forms";
+	// import { enhance } from "$app/forms";
 	import Input from "$lib/components/Input.svelte";
 	import type { InputProps } from "$lib/types";
+	import type { ActionData } from "./$types";
+
+	// export let form: ActionData;
 
 	const inputsProps: InputProps[] = [
 		{
@@ -31,7 +34,7 @@
 	];
 </script>
 
-<form method="POST" class=" mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]" use:enhance>
+<form method="POST" class=" mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]">
 	<legend class="text-2xl font-[500]">Sign up</legend>
 	{#each inputsProps as inputProps (inputProps.id)}
 		<Input {inputProps} />
