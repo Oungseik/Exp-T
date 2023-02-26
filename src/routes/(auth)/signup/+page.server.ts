@@ -5,8 +5,8 @@ import fs from "fs";
 import path from "path";
 import process from "process";
 
-export const actions: Actions = {
-  default: async ({ request, cookies }) => {
+export const actions = ({
+  default: async ({ request }) => {
     const data = Object.fromEntries(await request.formData()) as {
       name: string;
       email: string;
@@ -23,8 +23,6 @@ export const actions: Actions = {
     const fd = path.join(process.cwd(), "src/lib/server/credential.json");
     fs.writeFileSync(fd, JSON.stringify(data));
 
-    cookies.set("session-id", data.id, { maxAge: 60 });
-
     throw redirect(303, "/login");
   }
-};
+}) satisfies Actions;
