@@ -1,3 +1,14 @@
+<script lang="ts">
+	import { page } from "$app/stores";
+	import Notification from "$lib/components/Notification.svelte";
+
+	// console.log($page.form);
+</script>
+
+<!-- {#if $page.form?.error} -->
+<Notification message="password does not match" notiType="error" />
+<!-- {/if} -->
+
 <main class="text-gray-200 flex flex-col items-center mt-24">
 	<h2 class="text-5xl font-unbounded mb-4">Exp-T</h2>
 	<p>
