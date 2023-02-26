@@ -42,7 +42,7 @@
 	];
 </script>
 
-<form method="POST" class=" mt-12 mx-2 px-6 py-8 rounded-lg min-w-[300px]">
+<form method="POST" class=" mt-8 mx-2 px-6 py-8 rounded-lg min-w-[300px]">
 	<legend class="text-2xl font-[500]">Sign up</legend>
 	{#each inputsProps as inputProps (inputProps.id)}
 		<Input {inputProps} />
@@ -53,5 +53,5 @@
 			href="/login">Log in.</a
 		>
 	</p>
-	<button class="block ml-auto bg-cyan-600 mt-4 px-3 py-1 rounded-lg">Sign up</button>
+	<button class="block ml-auto bg-cyan-600 mt-6 px-3 py-1 rounded-lg">Sign up</button>
 </form>

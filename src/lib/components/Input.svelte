@@ -3,7 +3,7 @@
 	export let inputProps: InputProps;
 </script>
 
-<div class="flex flex-col relative mt-8">
+<div class="flex flex-col relative mt-6">
 	<input
 		class="peer bg-transparent border-b border-b-gray-400 focus-visible:outline-none placeholder-transparent"
 		type={inputProps.type}
