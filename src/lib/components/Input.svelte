@@ -8,6 +8,7 @@
 		class="peer bg-transparent border-b border-b-gray-400 focus-visible:outline-none placeholder-transparent"
 		type={inputProps.type}
 		name={inputProps.name}
+		value={inputProps.value}
 		id={inputProps.id}
 		placeholder={inputProps.title}
 		required={inputProps.required}

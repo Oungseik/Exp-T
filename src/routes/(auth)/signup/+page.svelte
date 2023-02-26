@@ -2,9 +2,9 @@
 	// import { enhance } from "$app/forms";
 	import Input from "$lib/components/Input.svelte";
 	import type { InputProps } from "$lib/types";
-	// import type { ActionData } from "./$types";
+	import type { ActionData } from "./$types";
 
-	// export let form: ActionData;
+	export let form: ActionData;
 
 	const inputsProps: InputProps[] = [
 		{
@@ -12,28 +12,32 @@
 			type: "text",
 			id: "name",
 			name: "name",
-			required: true
+			required: true,
+			value: form?.name || ""
 		},
 		{
 			title: "Email",
 			type: "email",
 			id: "email",
 			name: "email",
-			required: true
+			required: true,
+			value: form?.email || ""
 		},
 		{
 			title: "Password",
 			type: "password",
 			id: "password",
 			name: "password",
-			required: true
+			required: true,
+			value: ""
 		},
 		{
 			title: "Confirm Password",
 			type: "password",
 			id: "passwordConfirm",
 			name: "passwordConfirm",
-			required: true
+			required: true,
+			value: ""
 		}
 	];
 </script>

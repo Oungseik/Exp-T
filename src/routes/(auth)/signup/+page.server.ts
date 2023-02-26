@@ -20,14 +20,18 @@ export const actions = {
 		if (data.email === credential.email) {
 			return fail(400, {
 				error: true,
-				message: "Email is already used!"
+				message: "Email is already used!",
+				name: data.name,
+				email: data.email
 			});
 		}
 
 		if (data.password !== data.passwordConfirm) {
 			return fail(400, {
 				error: true,
-				message: "Password does not match!"
+				message: "Password does not match!",
+				name: data?.name,
+				email: data.email
 			});
 		}
 

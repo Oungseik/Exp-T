@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Input from "$lib/components/Input.svelte";
-	import { enhance } from "$app/forms";
 	import type { InputProps } from "$lib/types";
+	import type { ActionData } from "./$types";
+
+	export let form: ActionData;
 
 	const inputsProps: InputProps[] = [
 		{
@@ -9,14 +11,16 @@
 			type: "email",
 			id: "email",
 			name: "email",
-      required: true,
+			required: true,
+			value: form?.email || ""
 		},
 		{
 			title: "Password",
 			type: "password",
 			id: "password",
 			name: "password",
-      required: true,
+			required: true,
+			value: ""
 		}
 	];
 </script>
