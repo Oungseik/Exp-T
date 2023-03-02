@@ -39,6 +39,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"bcrypt": "^5.1.0",
 		"clsx": "^1.2.1"
 	}
 }
