@@ -8,7 +8,7 @@
 
 <div
 	class={clsx(
-		" min-w-[280px] fixed left-1/2 -translate-x-1/2 px-4 py-2 rounded-md bg-gray-600 animate-sideDown",
+		"min-w-[280px] fixed left-1/2 top-4 -translate-x-1/2 px-4 py-2 rounded-md bg-gray-600 z-50 animate-sideDown",
 		error && "border-2 border-red-300",
 		className
 	)}
