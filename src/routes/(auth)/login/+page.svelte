@@ -2,7 +2,6 @@
 	import Input from "$lib/components/Input.svelte";
 	import type { InputProps } from "$lib/types";
 	import type { ActionData } from "./$types";
-	import { applyAction, enhance } from "$app/forms";
 
 	export let form: ActionData;
 
@@ -26,18 +25,7 @@
 	];
 </script>
 
-<form
-	method="POST"
-	class="mt-8 mx-2 px-6 py-8 rounded-lg min-w-[300px]"
-	use:enhance={() => {
-		return async ({ result, update }) => {
-			if (result.type === "failure") {
-				await applyAction(result);
-			}
-			update();
-		};
-	}}
->
+<form method="POST" class="mt-8 mx-2 px-6 py-8 rounded-lg min-w-[300px]">
 	<legend class="text-2xl font-[500]">Login</legend>
 	{#each inputsProps as inputProps (inputProps.id)}
 		<Input {inputProps} />
