@@ -18,7 +18,7 @@ export const actions = {
 		}
 
 		if (data.password !== credential.password) {
-			return fail(400, {
+			return fail(401, {
 				error: true,
 				message: "Password does not correct!",
 				email: data.email

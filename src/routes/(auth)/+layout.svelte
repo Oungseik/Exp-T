@@ -3,7 +3,7 @@
 	import Notification from "$lib/components/Notification.svelte";
 </script>
 
-{#if $page.form?.error}
+{#if $page.form}
 	<Notification {...$page.form} />
 {/if}
 
